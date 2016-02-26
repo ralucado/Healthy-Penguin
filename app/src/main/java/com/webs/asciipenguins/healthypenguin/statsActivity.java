@@ -15,7 +15,7 @@ public class statsActivity extends Activity {
     Context context;
 
     ArrayList prgmName;
-    public static int [] prgmImages={R.drawable.i1,R.drawable.i2,R.drawable.i3,R.drawable.i4,R.drawable.i5,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1};
+    public static int [] prgmImages={ R.drawable.bread, R.drawable.candy, R.drawable.cereals, R.drawable.croissant,R.drawable.i5,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1};
     public static String [] prgmNameList={"Agua","Refrescos", "Dulces","Picsa","Fruta","Legumbres", "Verduras","Huevos","Carne","Pescado","Làcticos","Pan","Pasta","Cereales","Arroz","Patatas"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
