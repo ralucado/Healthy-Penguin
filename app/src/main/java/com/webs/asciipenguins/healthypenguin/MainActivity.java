@@ -30,7 +30,6 @@ public class MainActivity extends Activity {
 
             @Override
             public void onClick(View arg0) {
-                //image.setImageResource(R.drawable.penguin2);
                 Intent intent = new Intent(context, statsActivity.class);
                 startActivity(intent);
 
