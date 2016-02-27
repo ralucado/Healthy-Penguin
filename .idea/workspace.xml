@@ -9,19 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4da5b71-5bd7-4969-ab98-086f47c8d585" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/CustomAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/CustomAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/GridActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/GridActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/ImageAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/ImageAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/program_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/program_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/statsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/webs/asciipenguins/healthypenguin/statsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b4da5b71-5bd7-4969-ab98-086f47c8d585" name="Default" comment="" />
     <ignored path="Healthy-Penguin.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
