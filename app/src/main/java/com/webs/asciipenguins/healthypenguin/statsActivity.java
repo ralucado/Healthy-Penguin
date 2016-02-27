@@ -15,8 +15,8 @@ public class statsActivity extends Activity {
     Context context;
 
     ArrayList prgmName;
-    public static int [] prgmImages={ R.drawable.bread, R.drawable.candy, R.drawable.cereals, R.drawable.croissant,R.drawable.i5,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1,R.drawable.i1};
-    public static String [] prgmNameList={"Agua","Refrescos", "Dulces","Picsa","Fruta","Legumbres", "Verduras","Huevos","Carne","Pescado","Làcticos","Pan","Pasta","Cereales","Arroz","Patatas"};
+    public static int [] prgmImages={       R.drawable.water,   R.drawable.coke,   R.drawable.candy,    R.drawable.pizza,       R.drawable.apple,   R.drawable.beans,   R.drawable.vegetables,  R.drawable.egg, R.drawable.meat,R.drawable.fish,R.drawable.milk,R.drawable.bread,   R.drawable.pasta,   R.drawable.cereals, R.drawable.potato};
+    public static String [] prgmNameList={  "Agua",             "Refrescos",        "Dulces",           "Picsa",                "Fruta",            "Legumbres",        "Verduras",             "Huevos",       "Carne",        "Pescado",      "Làcticos",     "Pan",              "Pasta",            "Cereales"        ,"Patatas"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

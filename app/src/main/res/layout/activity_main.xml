@@ -2,7 +2,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@drawable/background" >
 
     <TextView android:text="Healthy Penguin" android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -15,7 +16,7 @@
             android:id="@+id/btnChangeImage"
             android:layout_width="184dp"
             android:layout_height="wrap_content"
-            android:text=" ||| " />
+            android:text=" Stats " />
         <Button
             android:id="@+id/btnChangeImageStats"
             android:layout_width="match_parent"
@@ -26,7 +27,8 @@
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/penguin" />
+        android:src="@drawable/funpen" />
+
 
 
 </LinearLayout>

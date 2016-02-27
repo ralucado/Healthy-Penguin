@@ -54,7 +54,7 @@ public class CustomAdapter extends BaseAdapter{
         rowView = inflater.inflate(R.layout.program_list, null);
         holder.tv=(TextView) rowView.findViewById(R.id.textView1);
         holder.img=(ImageView) rowView.findViewById(R.id.imageView1);
-        holder.tv.setText(result[position]);
+        holder.tv.setText(result[position]+" 0/3 setmana");
         holder.img.setImageResource(imageId[position]);
         rowView.setOnClickListener(new OnClickListener() {
             @Override

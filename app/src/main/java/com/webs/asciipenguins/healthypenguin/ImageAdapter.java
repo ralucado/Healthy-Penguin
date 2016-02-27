@@ -42,26 +42,12 @@ public class ImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-
         imageView.setImageResource(mThumbIds[position]);
         return imageView;
     }
 
     // references to our images
     private Integer[] mThumbIds = {
-            R.drawable.bread, R.drawable.candy,
-            R.drawable.cereals, R.drawable.croissant,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2,
-            R.drawable.i1, R.drawable.i2
-
+            R.drawable.water,   R.drawable.coke,   R.drawable.candy,    R.drawable.pizza,       R.drawable.apple,   R.drawable.beans,   R.drawable.vegetables,  R.drawable.egg, R.drawable.meat,R.drawable.fish,R.drawable.milk,R.drawable.bread,   R.drawable.pasta,   R.drawable.cereals, R.drawable.potato
     };
 }
