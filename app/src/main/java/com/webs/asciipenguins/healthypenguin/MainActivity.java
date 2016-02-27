@@ -14,11 +14,17 @@ package com.webs.asciipenguins.healthypenguin;
 
 public class MainActivity extends Activity {
 
+    enum PenguinState {
+        eating,
+        shiting,
+        etc
+    }
+
     Button button;
     Button button2;
     ImageView image;
+
     Handler handler;
-    Boolean penis;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,20 +62,29 @@ public class MainActivity extends Activity {
 
         handler = new Handler();
 
-        penis = false;
-
         final Runnable r = new Runnable() {
             public void run() {
-                handler.postDelayed(this, 500);
-                if (penis) image.setImageResource(R.drawable.penguin);
-                else image.setImageResource(R.drawable.penguin2);
-                penis = !penis;
+                handler.postDelayed(this, 100); // 10 frames
+                updatePenguin();
             }
         };
 
-        handler.postDelayed(r, 1000);
+        handler.postDelayed(r, 100);
 
 
+    }
+
+
+    PenguinState state;
+    
+
+    private void updatePenguin() {
+        switch (state) {
+            default:
+                break;
+        }
+
+        // image.setImageResource(R.drawable.penguin2);
     }
 
 
