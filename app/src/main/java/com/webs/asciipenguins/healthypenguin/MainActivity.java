@@ -4,17 +4,21 @@ package com.webs.asciipenguins.healthypenguin;
         import android.content.Context;
         import android.content.Intent;
         import android.os.Bundle;
+        import android.os.Handler;
         import android.util.Log;
         import android.widget.Button;
         import android.widget.ImageView;
         import android.view.View;
         import android.view.View.OnClickListener;
 
+
 public class MainActivity extends Activity {
 
     Button button;
     Button button2;
     ImageView image;
+    Handler handler;
+    Boolean penis;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,6 +53,21 @@ public class MainActivity extends Activity {
             }
 
         });
+
+        handler = new Handler();
+
+        penis = false;
+
+        final Runnable r = new Runnable() {
+            public void run() {
+                handler.postDelayed(this, 500);
+                if (penis) image.setImageResource(R.drawable.penguin);
+                else image.setImageResource(R.drawable.penguin2);
+                penis = !penis;
+            }
+        };
+
+        handler.postDelayed(r, 1000);
 
 
     }
