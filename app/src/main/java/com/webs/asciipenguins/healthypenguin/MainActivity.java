@@ -4,17 +4,27 @@ package com.webs.asciipenguins.healthypenguin;
         import android.content.Context;
         import android.content.Intent;
         import android.os.Bundle;
+        import android.os.Handler;
         import android.util.Log;
         import android.widget.Button;
         import android.widget.ImageView;
         import android.view.View;
         import android.view.View.OnClickListener;
 
+
 public class MainActivity extends Activity {
+
+    enum PenguinState {
+        eating,
+        shiting,
+        etc
+    }
 
     Button button;
     Button button2;
     ImageView image;
+
+    Handler handler;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,7 +60,31 @@ public class MainActivity extends Activity {
 
         });
 
+        handler = new Handler();
 
+        final Runnable r = new Runnable() {
+            public void run() {
+                handler.postDelayed(this, 100); // 10 frames
+                updatePenguin();
+            }
+        };
+
+        handler.postDelayed(r, 100);
+
+
+    }
+
+
+    PenguinState state;
+    
+
+    private void updatePenguin() {
+        switch (state) {
+            default:
+                break;
+        }
+
+        // image.setImageResource(R.drawable.penguin2);
     }
 
 
