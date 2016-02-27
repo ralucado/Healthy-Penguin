@@ -47,7 +47,14 @@ public class ImageAdapter extends BaseAdapter {
     }
 
     // references to our images
-    private Integer[] mThumbIds = {
-            R.drawable.water,   R.drawable.coke,   R.drawable.candy,    R.drawable.pizza,       R.drawable.apple,   R.drawable.beans,   R.drawable.vegetables,  R.drawable.egg, R.drawable.meat,R.drawable.fish,R.drawable.milk,R.drawable.bread,   R.drawable.pasta,   R.drawable.cereals, R.drawable.potato
-    };
+    private Integer[] mThumbIds = toInteger(statsActivity.prgmImages);
+
+    Integer[] toInteger(int[] oldArray) {
+        Integer[] newArray = new Integer[oldArray.length];
+        int i = 0;
+        for (int value : oldArray) {
+            newArray[i++] = Integer.valueOf(value);
+        }
+        return newArray;
+    }
 }

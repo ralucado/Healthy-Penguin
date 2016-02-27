@@ -28,6 +28,8 @@ public class MainActivity extends Activity {
 
     SharedPreferences prefs;
 
+    boolean focus = false;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         final Context context = this;
@@ -76,6 +78,17 @@ public class MainActivity extends Activity {
         prefs = this.getSharedPreferences("penguin", Context.MODE_PRIVATE);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        focus = true;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        focus = false;
+    }
 
     public enum PenguinState {
         bad,
@@ -114,6 +127,7 @@ public class MainActivity extends Activity {
     int[] sadId = {R.drawable.sadpen,R.drawable.sadpen2};
 
     private void updatePenguin() {
+        if (!focus) return;
         state = PenguinState.values()[prefs.getInt(STATE_KEY,PenguinState.fun.ordinal())];
         if (prefs.getBoolean(EATING_KEY,false)) state = PenguinState.eating;
         if (prefs.getBoolean(CHANGING_STATE_KEY,true)) {

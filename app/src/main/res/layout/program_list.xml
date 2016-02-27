@@ -19,4 +19,13 @@
         android:textSize="25dp"
         android:text="TextView" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_gravity="center_vertical|right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="TextView"
+        android:gravity="end" />
+
 </LinearLayout> 

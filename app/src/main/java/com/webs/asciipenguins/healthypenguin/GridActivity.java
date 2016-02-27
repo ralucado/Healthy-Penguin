@@ -16,9 +16,8 @@ public class GridActivity  extends Activity {
 
     public void onCreate(Bundle savedInstanceState) {
 
-        final int [] prgmImages={       R.drawable.water,   R.drawable.coke,   R.drawable.candy,    R.drawable.pizza,       R.drawable.apple,   R.drawable.beans,   R.drawable.vegetables,  R.drawable.egg, R.drawable.meat,R.drawable.fish,R.drawable.milk,R.drawable.bread,   R.drawable.pasta,   R.drawable.cereals, R.drawable.potato};
-        final String [] prgmNameList={  "Agua",             "Refrescos",        "Dulces",           "Picsa",                "Fruta",            "Legumbres",        "Verduras",             "Huevos",       "Carne",        "Pescado",      "Làcticos",     "Pan",              "Pasta",            "Cereales"        ,"Patatas"};
-
+        final int [] prgmImages= statsActivity.prgmImages;
+        final String [] prgmNameList= statsActivity.prgmNameList;
         prefs = this.getSharedPreferences("penguin", Context.MODE_PRIVATE);
 
         super.onCreate(savedInstanceState);
@@ -41,8 +40,25 @@ public class GridActivity  extends Activity {
                     case R.drawable.apple:
                         editor.putInt(MainActivity.STATE_KEY, MainActivity.PenguinState.happy.ordinal());
                         break;
-
+                    case R.drawable.candy:
+                        editor.putInt(MainActivity.STATE_KEY, MainActivity.PenguinState.die.ordinal());
+                        break;
+                    case R.drawable.cake:
+                        editor.putInt(MainActivity.STATE_KEY, MainActivity.PenguinState.gnye.ordinal());
+                        break;
+                    case R.drawable.wine:
+                        editor.putInt(MainActivity.STATE_KEY, MainActivity.PenguinState.sad.ordinal());
+                        break;
+                    case R.drawable.croissant:
+                        editor.putInt(MainActivity.STATE_KEY, MainActivity.PenguinState.bad.ordinal());
+                        break;
+                    case R.drawable.coke:
+                        editor.putInt(MainActivity.STATE_KEY, MainActivity.PenguinState.moving.ordinal());
+                        break;
+                    default:
+                        editor.putInt(MainActivity.STATE_KEY, MainActivity.PenguinState.fun.ordinal());
                 }
+                editor.putInt(prgmNameList[position], prefs.getInt(prgmNameList[position], 0) + 1);
                 editor.commit();
             }
         });

@@ -15,8 +15,8 @@ public class statsActivity extends Activity {
     Context context;
 
     ArrayList prgmName;
-    public static int [] prgmImages={       R.drawable.water,   R.drawable.coke,   R.drawable.candy,    R.drawable.pizza,       R.drawable.apple,   R.drawable.beans,   R.drawable.vegetables,  R.drawable.egg, R.drawable.meat,R.drawable.fish,R.drawable.milk,R.drawable.bread,   R.drawable.pasta,   R.drawable.cereals, R.drawable.potato};
-    public static String [] prgmNameList={  "Agua",             "Refrescos",        "Dulces",           "Picsa",                "Fruta",            "Legumbres",        "Verduras",             "Huevos",       "Carne",        "Pescado",      "Làcticos",     "Pan",              "Pasta",            "Cereales"        ,"Patatas"};
+    public static int [] prgmImages={       R.drawable.water,   R.drawable.coke,   R.drawable.candy,    R.drawable.pizza,       R.drawable.apple,   R.drawable.beans,   R.drawable.vegetables,  R.drawable.egg, R.drawable.meat,R.drawable.fish,R.drawable.milk,R.drawable.bread,   R.drawable.pasta,   R.drawable.cereals, R.drawable.potato ,R.drawable.cheese, R.drawable.coffee, R.drawable.croissant, R.drawable.cake, R.drawable.wine};
+    public static String [] prgmNameList={  "Agua",             "Refrescos",        "Dulces",           "Picsa",                "Fruta",            "Legumbres",        "Verduras",             "Huevos",       "Carne",        "Pescado",      "Leche"        ,     "Pan",              "Pasta",            "Cereales"        ,"Patatas"          ,"Queso"           ,"Café"           , "Pastas"            , "Pastel"       , "Vino"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
